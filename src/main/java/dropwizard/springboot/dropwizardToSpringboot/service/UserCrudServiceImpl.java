@@ -5,6 +5,7 @@ import dropwizard.springboot.dropwizardToSpringboot.entity.UserEntity;
 import dropwizard.springboot.dropwizardToSpringboot.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriBuilder;
 
 import java.util.List;
@@ -68,4 +69,14 @@ public class UserCrudServiceImpl implements UserCrudService{
         userRepository.delete(optionalUserEntity.get());
         return optionalUserEntity.get();
     }
+
+    @Override
+    public String getUsersFromDownstreamApi() {
+        final String uri = "https://jsonplaceholder.typicode.com/users";
+
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(uri, String.class);
+    }
+
+
 }

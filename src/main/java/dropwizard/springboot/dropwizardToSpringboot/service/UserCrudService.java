@@ -11,4 +11,6 @@ public interface UserCrudService {
     public UserEntity getUser(Integer userId);
     public List<UserEntity> getAllUsers();
     public UserEntity deleteUser(Integer userId);
+
+    public String getUsersFromDownstreamApi();
 }

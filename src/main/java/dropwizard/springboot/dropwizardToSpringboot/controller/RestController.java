@@ -70,8 +70,22 @@ public class RestController {
         return userCrudService.getAllUsers();
     }
 
+    /**
+     * Endpoint to delete user
+     * @param userId, required field to identify the user which needs to be deleted
+     * @return returns deleted userEntity
+     */
     @DeleteMapping("/deleteUser")
     public UserEntity deleteUser(@RequestParam(name = "userId", required = true)Integer userId){
         return userCrudService.deleteUser(userId);
+    }
+
+    /**
+     * Endpoint to demonstrate downstream api i.e. making call to an external api
+     * @return return users listed on the provided uri
+     */
+    @GetMapping("/downstreamGetUsers")
+    public String getEmployees(){
+        return userCrudService.getUsersFromDownstreamApi();
     }
 }

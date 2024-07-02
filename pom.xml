@@ -59,6 +59,22 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.30</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!--
+		below dependency has been added because above mysql-connector was throwing this warning:
+		Uncontrolled Resource Consumption vulnerability with High severity.
+		This patch solved the vulnerability issue
+		-->
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>3.21.7</version> <!-- Replace with the latest stable version -->
+		</dependency>
 	</dependencies>
 
 	<build>

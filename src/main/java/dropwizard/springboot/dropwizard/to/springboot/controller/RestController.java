@@ -1,4 +1,4 @@
-package dropwizard.springboot.dropwizardToSpringboot.controller;
+package dropwizard.springboot.dropwizard.to.springboot.controller;
 
 import dropwizard.springboot.dropwizardToSpringboot.dto.UserDto;
 import dropwizard.springboot.dropwizardToSpringboot.entity.UserEntity;

@@ -1,18 +1,17 @@
-package dropwizard.springboot.dropwizardToSpringboot.service;
+package dropwizard.springboot.dropwizard.to.springboot.service;
 
-import dropwizard.springboot.dropwizardToSpringboot.dto.UserDto;
-import dropwizard.springboot.dropwizardToSpringboot.entity.UserEntity;
-import dropwizard.springboot.dropwizardToSpringboot.repository.UserRepository;
+import dropwizard.springboot.dropwizard.to.springboot.dto.UserDto;
+import dropwizard.springboot.dropwizard.to.springboot.entity.UserEntity;
+import dropwizard.springboot.dropwizard.to.springboot.repository.UserRepository;
+import dropwizard.springboot.dropwizard.to.springboot.service.UserCrudService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.util.UriBuilder;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.OptionalInt;
 
 @Service
-public class UserCrudServiceImpl implements UserCrudService{
+public class UserCrudServiceImpl implements UserCrudService {
 
     @Autowired
     private UserRepository userRepository;

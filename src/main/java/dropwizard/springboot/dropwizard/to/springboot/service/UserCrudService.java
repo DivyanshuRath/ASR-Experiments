@@ -1,7 +1,7 @@
-package dropwizard.springboot.dropwizardToSpringboot.service;
+package dropwizard.springboot.dropwizard.to.springboot.service;
 
-import dropwizard.springboot.dropwizardToSpringboot.dto.UserDto;
-import dropwizard.springboot.dropwizardToSpringboot.entity.UserEntity;
+import dropwizard.springboot.dropwizard.to.springboot.dto.UserDto;
+import dropwizard.springboot.dropwizard.to.springboot.entity.UserEntity;
 
 import java.util.List;
 

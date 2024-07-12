@@ -1,4 +1,4 @@
-package dropwizard.springboot.dropwizardToSpringboot.entity;
+package dropwizard.springboot.dropwizard.to.springboot.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

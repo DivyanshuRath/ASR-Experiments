@@ -1,6 +1,6 @@
-package dropwizard.springboot.dropwizardToSpringboot.repository;
+package dropwizard.springboot.dropwizard.to.springboot.repository;
 
-import dropwizard.springboot.dropwizardToSpringboot.entity.UserEntity;
+import dropwizard.springboot.dropwizard.to.springboot.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

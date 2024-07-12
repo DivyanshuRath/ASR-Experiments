@@ -1,4 +1,4 @@
-package dropwizard.springboot.dropwizardToSpringboot.dto;
+package dropwizard.springboot.dropwizard.to.springboot.dto;
 
 public class UserDto {
     private String name;

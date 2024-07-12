@@ -1,8 +1,8 @@
 package dropwizard.springboot.dropwizard.to.springboot.controller;
 
-import dropwizard.springboot.dropwizardToSpringboot.dto.UserDto;
-import dropwizard.springboot.dropwizardToSpringboot.entity.UserEntity;
-import dropwizard.springboot.dropwizardToSpringboot.service.UserCrudService;
+import dropwizard.springboot.dropwizard.to.springboot.dto.UserDto;
+import dropwizard.springboot.dropwizard.to.springboot.entity.UserEntity;
+import dropwizard.springboot.dropwizard.to.springboot.service.UserCrudService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

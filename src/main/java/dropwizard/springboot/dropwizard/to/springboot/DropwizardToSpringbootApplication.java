@@ -1,10 +1,10 @@
-package dropwizard.springboot.dropwizardToSpringboot;
+package dropwizard.springboot.dropwizard.to.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
+@SpringBootApplication
 public class DropwizardToSpringbootApplication {
 
 	public static void main(String[] args) {

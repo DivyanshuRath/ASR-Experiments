@@ -1,4 +1,4 @@
-package dropwizard.springboot.dropwizardToSpringboot.controller;
+package dropwizard.springboot.dropwizard.to.springboot.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
